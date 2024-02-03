@@ -68,8 +68,8 @@ class Play extends Phaser.Scene {
         // cup/ball collision
         this.physics.add.collider(this.ball, this.cup, (ball, cup) => {
             ball.body.setVelocity(0, 0)
-            ball.body.setX = width / 2
-            ball.body.setY = height - height / 10
+            ball.setX(width / 2)
+            ball.setY(height - height / 10)
                   
         })
         // ball/wall collision
